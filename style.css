@@ -1,0 +1,266 @@
+/* Reset CSS dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling dasar */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #410066;
+    background: linear-gradient(45deg, #30004d, #8710a8, #014b5e, #1f8da8, #410066);
+    background-size: 300% 300%; /* Tambahkan ukuran background */
+    animation: color 12s ease-in-out infinite; /* Animasi perpindahan warna */
+}
+/* tulisan mindgo */
+h1:hover{
+    color: #19e456;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%; /* Posisi awal background */
+    }
+    50% {
+        background-position: 100% 50%; /* Posisi tengah background */
+    }
+    100% {
+        background-position: 0% 50%; /* Posisi akhir background */
+    }
+}
+
+header {
+    background-color: #5b0475;
+    color: white;
+    padding: 15px;
+    border: 1px solid #5b0475;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*  jasa dan layanan */
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Styling untuk tombol */
+.pembuatan, .jasaediting, .penulisan_artikel {
+    height: 40px;
+    width: 120px;
+    background-color: #7b2cbf; /* Warna ungu utama */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Hover effect untuk tombol */
+.pembuatan:hover, .jasaediting:hover, .penulisan_artikel:hover {
+    background-color: #9d4edd; /* Warna ungu lebih terang saat hover */
+    transform: translateY(-3px); /* Efek naik sedikit saat hover */
+}
+
+/* Efek ketika tombol ditekan */
+.pembuatan:active, .jasaediting:active, .penulisan_artikel:active {
+    background-color: #5a189a; /* Warna ungu lebih gelap saat ditekan */
+    transform: translateY(1px); /* Efek turun sedikit saat ditekan */
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* tentang kami  */
+.tentangkami {
+    width: 80%;
+    margin: 0 auto;
+    padding: 70px;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dbd1d1;
+
+}
+
+.about-us {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #410066;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    background: linear-gradient(45deg, #1f8da8, #1fa886, #265763, #54cceb, #1f8da8);
+    background-size: 300% 300%; /* Tambahkan ukuran background */
+    animation: color 12s ease-in-out infinite; /* Animasi perpindahan warna */
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%; /* Posisi awal background */
+    }
+    50% {
+        background-position: 100% 50%; /* Posisi tengah background */
+    }
+    100% {
+        background-position: 0% 50%; /* Posisi akhir background */
+    }
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #480063;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: #ffffff;
+}
+
+/* bagian footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+.footer p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.footer a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #ff4500;
+}
+.footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.footer .social-media a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+}
+.footer .social-media img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+.footer .social-media a:hover img {
+    transform: scale(1.1);
+}
+
+#copy{
+    background-color: #9658a8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        order: 1;
+    }
+
+    main {
+        order: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1, nav h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        font-size: 0.9em;
+    }
+}
